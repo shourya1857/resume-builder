@@ -1,0 +1,138 @@
+/* Resume Builder CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #resume-builder {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #sections-container {
+    margin-top: 20px;
+  }
+  
+  .sortable-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .drag-handle {
+    cursor: grab;
+    margin-right: 10px;
+  }
+  
+  .section-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-info i {
+    margin-right: 5px;
+  }
+  
+  .section-description {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .section-name {
+    flex-grow: 1;
+  }
+  
+  .edit-button {
+    margin-right: 10px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input[type="checkbox"]:checked + .slider {
+    background-color: violet;
+  }
+  
+  input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  #save-next-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #save-button,
+  #next-button {
+    margin: 0 10px;
+  }
+  
+  #save-button button,
+  #next-button button {
+    background-color: violet;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Added lines */
+  .sortable-item::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  /* Proper spacing */
+  .sortable-item:first-child {
+    margin-top: 0;
+  }
+  
+  /* Cover the entire screen */
+  html, body {
+    height: 100%;
+  }
+  

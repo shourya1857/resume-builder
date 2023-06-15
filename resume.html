@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="resume.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="resume-builder">
+    <h1>Select your Sections</h1>
+    <div id="sections-container">
+      <ul id="sortable-list">
+        <li class="sortable-item">
+          <span class="drag-handle"><i class="fa fa-bars"></i></span>
+          <span class="fa-thin fa-circle-info" title="Section description"><i class="fa fa-info-circle"></i></span>
+          <span class="section-name">Profile Summary</span>
+          <button class="edit-button" onclick="enableEdit(this)"><i class="fa fa-pencil"></i></button>
+          <label class="switch">
+            <input type="checkbox" onchange="toggleSection(this)">
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="sortable-item">
+          <span class="drag-handle"><i class="fa fa-bars"></i></span>
+          <span class="fa-thin fa-circle-info" title="Section description"><i class="fa fa-info-circle"></i></span>
+          <span class="section-name">Academic and Cocurricular Achievements</span>
+          <button class="edit-button" onclick="enableEdit(this)"><i class="fa fa-pencil"></i></button>
+          <label class="switch">
+            <input type="checkbox" onchange="toggleSection(this)">
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="sortable-item">
+          <span class="drag-handle"><i class="fa fa-bars"></i></span>
+          <span class="fa-thin fa-circle-info" title="Section description"><i class="fa fa-info-circle"></i></span>
+          <span class="section-name">Summer Internship Experience</span>
+          <button class="edit-button" onclick="enableEdit(this)"><i class="fa fa-pencil"></i></button>
+          <label class="switch">
+            <input type="checkbox" onchange="toggleSection(this)">
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="sortable-item">
+          <span class="drag-handle"><i class="fa fa-bars"></i></span>
+          <span class="fa-thin fa-circle-info" title="Section description"><i class="fa fa-info-circle"></i></span>
+          <span class="section-name">Work Experience</span>
+          <button class="edit-button" onclick="enableEdit(this)"><i class="fa fa-pencil"></i></button>
+          <label class="switch">
+            <input type="checkbox" onchange="toggleSection(this)">
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="sortable-item">
+          <span class="drag-handle"><i class="fa fa-bars"></i></span>
+          <span class="fa-thin fa-circle-info" title="Section description"><i class="fa fa-info-circle"></i></span>
+          <span class="section-name">Projects</span>
+          <button class="edit-button" onclick="enableEdit(this)"><i class="fa fa-pencil"></i></button>
+          <label class="switch">
+            <input type="checkbox" onchange="toggleSection(this)">
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="sortable-item">
+          <span class="drag-handle"><i class="fa fa-bars"></i></span>
+          <span class="fa-thin fa-circle-info" title="Section description"><i class="fa fa-info-circle"></i></span>
+          <span class="section-name">Certifications</span>
+          <button class="edit-button" onclick="enableEdit(this)"><i class="fa fa-pencil"></i></button>
+          <label class="switch">
+            <input type="checkbox" onchange="toggleSection(this)">
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="sortable-item">
+          <span class="drag-handle"><i class="fa fa-bars"></i></span>
+          <span class="fa-thin fa-circle-info" title="Section description"><i class="fa fa-info-circle"></i></span>
+          <span class="section-name">Leadership Positions</span>
+          <button class="edit-button" onclick="enableEdit(this)"><i class="fa fa-pencil"></i></button>
+          <label class="switch">
+            <input type="checkbox" onchange="toggleSection(this)">
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="sortable-item">
+          <span class="drag-handle"><i class="fa fa-bars"></i></span>
+          <span class="fa-thin fa-circle-info" title="Section description"><i class="fa fa-info-circle"></i></span>
+          <span class="section-name">Extracurricular</span>
+          <button class="edit-button" onclick="enableEdit(this)"><i class="fa fa-pencil"></i></button>
+          <label class="switch">
+            <input type="checkbox" onchange="toggleSection(this)">
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="sortable-item">
+          <span class="drag-handle"><i class="fa fa-bars"></i></span>
+          <span class="fa-thin fa-circle-info" title="Section description"><i class="fa fa-info-circle"></i></span>
+          <span class="section-name">Education</span>
+          <button class="edit-button" onclick="enableEdit(this)"><i class="fa fa-pencil"></i></button>
+          <label class="switch">
+            <input type="checkbox" onchange="toggleSection(this)">
+            <span class="slider round"></span>
+          </label>
+        </li>
+      </ul>
+      <center>
+      <div id="save-button">
+        <button>Save and Next</button>
+      </div>
+    </center>
+      
+  <script src="resume.js"></script>
+</body>
+</html>
